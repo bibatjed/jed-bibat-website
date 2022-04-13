@@ -15,8 +15,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="mx-auto max-w-3xl px-6 sm:px-8 mt-20 mb-36">
-        <div className="mb-14 sm:flex sm:items-center sm:justify-between">
-          <div className="mt-6 max-w-lg sm:my-0">
+        <div className="mb-14 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div className="order-2 sm:order-1 mt-6 max-w-lg sm:my-0">
             <h1 className="mb-2 text-3xl font-bold text-white sm:text-4xl">
               Mark Jed Bibat
             </h1>
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               fan of Esports!
             </p>
           </div>
-          <div className="block w-40">
+          <div className="order-1 sm:order-2 block w-40">
             <Image
               className="rounded-full"
               src={profilePic}
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             Technologies I use:
           </h2>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {" "}
             {technologies.map(({ id, ...rest }) => (
               <Technologies key={id} {...rest} />
