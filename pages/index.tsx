@@ -21,15 +21,24 @@ const Home: NextPage = () => {
               Mark Jed Bibat
             </h1>
             <h2 className="mb-4 text-gray-100">Backend/Full Stack Developer</h2>
-            <p className="w-full font-normal leading-7  text-gray-300 sm:max-w-sm md:max-w-lg">
-              Welcome to my portfolio. I'm a web developer wherein I specialize
-              in backend development but can work on frontend aswell. In my free
-              time I enjoy exploring web technologies and also I'm a big fan of
-              Esports!
+            <p className="w-full font-normal leading-7 text-gray-300 sm:max-w-sm md:max-w-lg">
+              Welcome to my portfolio. I&#39;m a web developer wherein I
+              specialize in backend development but can work on frontend aswell.
+              In my free time I enjoy exploring web technologies and also a big
+              fan of Esports!
             </p>
           </div>
+          <div className="block w-40">
+            <Image
+              className="rounded-full"
+              src={profilePic}
+              alt="Picture of the author"
+              placeholder="blur"
+              objectFit="cover"
+              layout="responsive"
+            />
+          </div>
         </div>
-
         {/* TECHONOLOGIES */}
         <div>
           <h2 className="mb-6 text-2xl font-bold text-white">
