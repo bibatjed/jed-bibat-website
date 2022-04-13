@@ -23,9 +23,9 @@ const Home: NextPage = () => {
             <h2 className="mb-4 text-gray-100">Backend/Full Stack Developer</h2>
             <p className="w-full font-normal leading-7 text-gray-300 sm:max-w-sm md:max-w-lg">
               Welcome to my portfolio. I&#39;m a web developer wherein I
-              specialize in backend development but can work on frontend aswell.
-              In my free time I enjoy exploring web technologies and also a big
-              fan of Esports!
+              specialize in backend development but can work on frontend as
+              well. In my free time I enjoy exploring web technologies and also
+              a big fan of Esports!
             </p>
           </div>
           <div className="order-1 sm:order-2 block w-40">
