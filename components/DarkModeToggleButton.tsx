@@ -16,7 +16,7 @@ export function DarkModeToggleButton() {
         {loaded && resolvedTheme === "light" ? <MoonIcon /> : <SunIcon />}
       </span>
 
-      <span className="absolute bottom-20 text-xs translate-y-10 -translate-x-1/2 min-w-max bg-white text-gray-600 p-2 border shadow-md font-medium transition-all duration-200 rounded-3xl scale-0 group-hover:scale-100 group-hover:translate-y-2 dark:text-gray-300 dark:border-gray-600 dark:bg-gray-800 ">
+      <span className="absolute bottom-20 text-xs translate-y-10 -translate-x-1/2 min-w-max bg-white text-gray-600 p-2 border shadow-md font-medium transition-all duration-200 rounded-3xl scale-0 group-hover:scale-100 group-active:scale-0 group-hover:translate-y-2 dark:text-gray-300 dark:border-gray-600 dark:bg-gray-800 ">
         {loaded && resolvedTheme === "light" ? "Dark mode" : "Light mode"}
       </span>
     </button>
