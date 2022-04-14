@@ -4,10 +4,9 @@ import profilePic from "../public/images/me.jpg";
 import Image from "next/image";
 import technologies from "../constants/techonologies";
 import Technologies from "../components/Technologies";
-import { useTheme } from "next-themes";
+import NavigationBar from "../components/NavigationBar";
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme();
   return (
     <div>
       <Head>
@@ -22,10 +21,10 @@ const Home: NextPage = () => {
             <h1 className="mb-2 text-3xl text-gray-900 font-bold dark:text-white sm:text-4xl">
               Mark Jed Bibat
             </h1>
-            <h2 className="mb-4 dark:text-gray-100">
+            <h2 className="mb-4 font-semibold dark:text-gray-100">
               Backend/Full Stack Developer
             </h2>
-            <p className="w-full font-normal leading-7 dark:text-gray-300 sm:max-w-sm md:max-w-lg">
+            <p className="w-full font-normal leading-7 text-gray-800 dark:text-gray-300 sm:max-w-sm md:max-w-lg">
               Welcome to my portfolio. I&#39;m a web developer wherein I
               specialize in backend development but can work on frontend as
               well. In my free time I enjoy exploring web technologies and also
@@ -57,14 +56,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <button
-        onClick={() => {
-          setTheme(theme === "light" ? "dark" : "light");
-        }}
-      >
-        {" "}
-        dark mode toggle
-      </button>
+      <NavigationBar />
     </div>
   );
 };
