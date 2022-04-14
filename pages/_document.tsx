@@ -8,7 +8,7 @@ export default function Document() {
       </Head>
       <body
         className="antialiased 
-        bg-gray-900/95 selection:bg-indigo-300 selection:text-indigo-900"
+        dark:bg-gray-900/95 dark:selection:bg-indigo-300 dark:selection:text-indigo-900"
       >
         <Main />
         <NextScript />
