@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import profilePic from "../public/images/me.jpg";
 import Image from "next/image";
 import technologies from "../constants/techonologies";
