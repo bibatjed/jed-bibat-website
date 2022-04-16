@@ -5,16 +5,11 @@ import Image from "next/image";
 import technologies from "../constants/techonologies";
 import Technologies from "../components/Technologies";
 import NavigationBar from "../components/NavigationBar";
+import MetaContainer from "../components/MetaContainer";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Head>
-        <title>Mark Jed Bibat</title>
-        <meta name="description" content="Web - Jed" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <MetaContainer>
       <main className="mx-auto max-w-3xl px-6 sm:px-8 mt-20 mb-36">
         <div className="mb-14 flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div className="order-2 sm:order-1 mt-6 max-w-lg sm:my-0">
@@ -57,7 +52,7 @@ const Home: NextPage = () => {
         </div>
       </main>
       <NavigationBar />
-    </div>
+    </MetaContainer>
   );
 };
 
