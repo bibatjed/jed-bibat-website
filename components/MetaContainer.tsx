@@ -3,7 +3,7 @@ import Head from "next/head";
 interface Props {
   children: JSX.Element | JSX.Element[];
 }
-export default ({ children }: Props) => {
+export default function MetaContainer({ children }: Props) {
   return (
     <>
       <Head>
@@ -14,4 +14,4 @@ export default ({ children }: Props) => {
       {children}
     </>
   );
-};
+}
