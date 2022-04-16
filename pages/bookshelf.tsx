@@ -33,7 +33,7 @@ export default function BookShelf() {
             />
           </div>
           <div>
-            <h3 className="font-semibold text-xl mb-2">Let's Go!</h3>
+            <h3 className="font-semibold text-xl mb-2">Let&apos;s Go!</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 space-x-1 mb-4">
               <span className="text-gray-800 dark:text-gray-200">
                 Alex Edwards{" "}
@@ -43,9 +43,9 @@ export default function BookShelf() {
             </p>
 
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-              "I started reading this book to improve my knowledge with the Go
-              Programming Language, so far I'm loving this book and will
-              definitely recommend this to someone starting out."
+              &quot;I started reading this book to improve my knowledge with the
+              Go Programming Language, so far I&apos;m loving this book and will
+              definitely recommend this to someone starting out.&quot;
             </p>
           </div>
         </div>
