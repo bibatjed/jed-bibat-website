@@ -17,7 +17,7 @@ export default function ResumePDF() {
   return (
     <div id="ResumeContainer">
       <Document file={"/bibatresume.pdf"} onLoadSuccess={onDocumentLoadSuccess}>
-        <Page scale={isDesktopOrLaptop ? 2 : 2} pageNumber={pageNumber} />
+        <Page scale={isDesktopOrLaptop ? 2 : 1} pageNumber={pageNumber} />
       </Document>
     </div>
   );
